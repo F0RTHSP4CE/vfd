@@ -64,3 +64,9 @@ time. Can be fed directly to the Arduino Nano.
 
 `bad_apple_buffer.py` encodes the Bad Apple video in a format the the ESP8266
 firmware expects.
+
+## Resources
+  - [VFD working principle](https://en.wikipedia.org/wiki/Vacuum_fluorescent_display)
+  - [Interface description of similar tubes (Russian)](https://cxem.net/mc/mc503.php)
+  - [Random VFD controller datasheet, helped me understand a few things](https://www.analog.com/media/en/technical-documentation/data-sheets/max6851.pdf)
+  - [Datasheet for original display board](https://www.novopos.ch/client/FEC-Firich/LCM/SCV02002R6MNGZ4.pdf)
