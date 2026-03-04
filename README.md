@@ -57,6 +57,13 @@ it just reads 175 bytes from a file in LittleFS and sends them to the second
 UART port. Like I said, whoever adds Wi-Fi support to this thing gets an apple
 from me (or a cookie, at your discretion). Firmware: `esp/esp.ino`
 
+## Warning
+
+  - In VFD driver firmware, never pull down `PIN_FIL_A` and `PIN_FIL_B`
+    simultaneously. Only one needs to be down at a time, or both need to be up.
+    If both are pulled down, a short is formed in the H-bridge! So don't.
+  - I'm not exactly comfortable with 40V DC. If you are, godspeed.
+
 ## Scripts
 
 `bad_apple.py` reads the Bad Apple video and sends it to a serial port in real
